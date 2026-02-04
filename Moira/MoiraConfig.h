@@ -91,7 +91,7 @@
 /* The following macro appear at the end of each instruction handler.
  * Moira will call 'didExecute(...)' for all listed instructions.
  */
-#define MOIRA_DID_EXECUTE     I == Instr::RESET
+#define MOIRA_DID_EXECUTE     I == Instr::RESET || I == Instr::JSR || I == Instr::BSR || I == Instr::RTS
 
 /* Controls assertion checking.
  *
